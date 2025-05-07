@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain, screen } = require('electron');
 const path = require('path');
 const OpenAI = require('openai');
+require('dotenv').config();
 
 let mainWindow;
 
