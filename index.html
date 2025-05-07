@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextAI Dock</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 14px;
+      color: #569cd6;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    /* Output area - takes most of the space */
+    #aiOutput {
+      flex-grow: 1;
+      background-color: #1e1e1e;
+      border: 1px solid #3c3c3c;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 13px;
+      color: #d4d4d4;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    /* Chat bubble styling for output */
+    .aiMessage {
+      background-color: #252526;
+      padding: 8px 10px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    /* Input area - stays at bottom */
+    .input-area {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    textarea, input {
+      background-color: #252526;
+      color: #d4d4d4;
+      border: 1px solid #3c3c3c;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 13px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+      height: 60px;
+    }
+
+    textarea:focus, input:focus {
+      outline: none;
+      border-color: #569cd6;
+    }
+
+    button {
+      background-color: #0e639c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1177bb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TextAI Dock</h1>
+
+    <!-- Streaming response output -->
+    <div id="aiOutput">
+      <div class="aiMessage">AI response will appear here...</div>
+    </div>
+
+    <!-- Inputs at bottom -->
+    <div class="input-area">
+      <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+      <input id="promptText" type="text" placeholder="Enter your prompt..." />
+      <button id="submitBtn">Submit</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

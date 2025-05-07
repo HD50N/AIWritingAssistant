@@ -1,0 +1,15 @@
+{
+  "name": "textai-dock",
+  "version": "1.0.0",
+  "description": "A universal, always-on AI-powered sidebar assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "openai": "^4.97.0"
+  }
+}
