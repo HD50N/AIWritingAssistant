@@ -41,13 +41,14 @@ OPENAI_API_KEY=sk-your-real-openai-api-key
 ✅ Make sure your .env is listed in .gitignore (already configured in this repo).
 
 ### 4️⃣ Run the app
-bash
+``` bash
 Copy
 Edit
 npm start
+```
 The sidebar will launch, docked to the right side of your screen.
 
-📝 Usage
+### 📝 Usage
 Enter the text you want to modify.
 
 Enter your prompt (example: "Rewrite to sound professional").
@@ -56,14 +57,14 @@ Click "Submit".
 
 Watch the response stream into the chat window in real-time!
 
-🛡️ Important Notes
+### 🛡️ Important Notes
 Never commit your API key to Git. This project uses a .env file to keep secrets safe.
 
 If you change screens or monitor sizes, restart the app to reposition the sidebar.
 
 Currently tested on macOS and Windows.
 
-👨‍💻 Tech Stack
+### 👨‍💻 Tech Stack
 Electron
 
 OpenAI Node SDK (v4) with streaming
@@ -72,7 +73,7 @@ HTML / CSS / JavaScript (no frameworks)
 
 dotenv for secure API key management
 
-🛠️ Future Improvements (Planned)
+### 🛠️ Future Improvements (Planned)
 Submit on Enter key
 
 Clear chat button
