@@ -24,12 +24,14 @@ It streams AI responses in real-time into a modern, chat-style UI.
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
-2️⃣ Install dependencies
-bash
+```
+### 2️⃣ Install dependencies
+```bash
 Copy
 Edit
 npm install
-3️⃣ Set your OpenAI API key
+```
+### 3️⃣ Set your OpenAI API key
 Create a .env file in the root of the project:
 
 plaintext
@@ -38,7 +40,7 @@ Edit
 OPENAI_API_KEY=sk-your-real-openai-api-key
 ✅ Make sure your .env is listed in .gitignore (already configured in this repo).
 
-4️⃣ Run the app
+### 4️⃣ Run the app
 bash
 Copy
 Edit
